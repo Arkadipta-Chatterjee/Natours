@@ -9,6 +9,7 @@ const hpp = require('hpp');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const compression = require('compression');
+const csp = require('express-csp');
 
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
@@ -17,7 +18,6 @@ const userRouter = require('./routes/userRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
 const bookingsRouter = require('./routes/bookingRoutes');
 const viewRouter = require('./routes/viewRoutes');
-const csp = require('express-csp');
 
 const app = express();
 
